@@ -1,4 +1,4 @@
-const myModal = new bootstrap.Modal("#Transações-modal");
+const myModal = new bootstrap.Modal("#Transactions-modal");
 let logged = sessionStorage.getItem("logged");
 const session = localStorage.getItem("session");
 
@@ -10,7 +10,7 @@ let data = {
 document.getElementById("button-logout").addEventListener("click", logout);
 
 //adicionar lançamento
-document.getElementById("Transações-form").addEventListener("submit", function(e) {
+document.getElementById("Transactions-form").addEventListener("submit", function(e) {
     e.preventDefault();
 
     const value = parseFloat(document.getElementById("value-input").value);
